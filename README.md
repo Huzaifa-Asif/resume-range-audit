@@ -4,7 +4,7 @@ Explain whether a single HTTP resume response is eligible to append to a saved f
 
 `auditResumeResponse` correlates the saved offset and strong ETag, the actual GET request, response headers, and an optional observed body count. It returns one of five decisions with a machine-readable diagnostic. It performs no network or file I/O, retries, checksums, or storage changes. There are no runtime dependencies.
 
-**Status:** unpublished `1.0.0` candidate. Registry publication and creation of the planned `Huzaifa-Asif/resume-range-audit` GitHub repository have not been confirmed. Repository fields in the package metadata describe that planned destination.
+**Status:** `1.0.0` is published on [npm](https://www.npmjs.com/package/resume-range-audit/v/1.0.0), with source available in the public [`Huzaifa-Asif/resume-range-audit`](https://github.com/Huzaifa-Asif/resume-range-audit) repository.
 
 ## Before you use it
 
