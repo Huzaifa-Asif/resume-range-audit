@@ -1,0 +1,34 @@
+{
+  "name": "resume-range-audit",
+  "version": "1.0.0",
+  "description": "Audit single-range HTTP resume responses against saved offsets, strong validators, and completed body lengths without I/O.",
+  "license": "MIT",
+  "author": "Huzaifa Asif",
+  "keywords": ["http", "range", "resume", "download", "etag", "validation", "diagnostics"],
+  "repository": { "type": "git", "url": "git+https://github.com/Huzaifa-Asif/resume-range-audit.git" },
+  "bugs": { "url": "https://github.com/Huzaifa-Asif/resume-range-audit/issues" },
+  "homepage": "https://github.com/Huzaifa-Asif/resume-range-audit#readme",
+  "type": "commonjs",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": { "types": "./dist/index.d.mts", "default": "./dist/index.mjs" },
+      "require": { "types": "./dist/index.d.ts", "default": "./dist/index.js" }
+    }
+  },
+  "files": ["dist", "README.md", "LICENSE", "NOTICE.md", "CHANGELOG.md", "SECURITY.md", "CONTRIBUTING.md", "CODE_OF_CONDUCT.md"],
+  "sideEffects": false,
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "build": "tsc -p tsconfig.json && node scripts/build.mjs",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "lint": "eslint src test scripts examples eslint.config.mjs",
+    "test": "node --test test/*.test.mjs",
+    "test:coverage": "node --experimental-test-coverage --test test/*.test.mjs",
+    "check": "npm run lint && npm run typecheck && npm run build && npm run test:coverage && node examples/audit-fixtures.mjs && npm pack --dry-run"
+  },
+  "devDependencies": { "eslint": "10.12.0", "typescript": "6.0.3", "typescript-eslint": "8.71.1" },
+  "publishConfig": { "access": "public" }
+}
