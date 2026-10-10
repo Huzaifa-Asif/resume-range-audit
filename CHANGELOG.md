@@ -1,8 +1,15 @@
 # Changelog
 
-## 1.0.0 (unreleased candidate)
+## 1.0.1 - 2026-10-10
 
-Registry publication has not been confirmed. This section describes the initial candidate, not a published release.
+### Added
+
+- Ship the offline range-response fixtures in the npm tarball.
+- Document the related S3 multipart-planning utility.
+
+## 1.0.0 - 2026-10-06
+
+Initial public release.
 
 ### Added
 

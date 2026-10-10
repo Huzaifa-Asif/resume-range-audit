@@ -283,6 +283,15 @@ Real regressions informed the fixture choices: Firefox's [fixed resume-fallback 
 
 The underlying HTTP concepts are described in RFC 9110: [If-Range](https://www.rfc-editor.org/rfc/rfc9110.html#section-13.1.5), [byte ranges](https://www.rfc-editor.org/rfc/rfc9110.html#section-14.1.2), [Content-Range](https://www.rfc-editor.org/rfc/rfc9110.html#section-14.4), [combining partial content](https://www.rfc-editor.org/rfc/rfc9110.html#section-15.3.7.3), and [416](https://www.rfc-editor.org/rfc/rfc9110.html#section-15.5.17). The implementation and policy are original; these links are references, not copied implementation sources.
 
+## Runnable example and related tool
+
+[`examples/audit-fixtures.mjs`](examples/audit-fixtures.mjs) checks a staged
+`206`, a zero-offset resume, and the required restart on a `200` fallback. It is
+executed by `npm run check` and ships in the npm tarball.
+
+For planning legal S3 multipart upload ranges before sending data, see
+[`s3-multipart-planner`](https://www.npmjs.com/package/s3-multipart-planner).
+
 ## Development and support
 
 ```sh
