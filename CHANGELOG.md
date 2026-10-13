@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.0.2 - 2026-10-14
+
+### Fixed
+
+- Replace stale pre-publication wording in the README, security policy, and
+  contributing guide with the verified public repository and npm workflow.
+- Avoid pinning the README status and primary install command to an obsolete
+  patch release.
+
 ## 1.0.1 - 2026-10-10
 
 ### Added

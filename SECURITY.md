@@ -2,7 +2,8 @@
 
 ## Status and scope
 
-This source is an unpublished `1.0.0` candidate. There are no confirmed published releases or established support window in this document.
+Security fixes are provided on the latest published `1.0.x` release; older patch
+releases may be asked to upgrade before a report is investigated.
 
 The package audits supplied metadata and counts. It cannot authenticate a server, inspect bytes, hash a file, prevent races, validate caller assertions, or guarantee storage correctness. The caller must establish that saved state and the actual request describe the same final resource and selected representation, that bytes are identity coded, and that all relevant response headers are available.
 
@@ -12,7 +13,7 @@ Incorrect append eligibility, accepting malformed evidence that bypasses the doc
 
 The maintainer is [Huzaifa Asif (`Huzaifa-Asif`) on GitHub](https://github.com/Huzaifa-Asif).
 
-- If the planned project repository has been created and its Security tab offers **Report a vulnerability**, use that private reporting route.
+- If the project repository's Security tab offers **Report a vulnerability**, use that private reporting route.
 - Otherwise, use a private contact method the maintainer explicitly publishes on their GitHub profile. This document does not claim that a particular private contact or private-reporting feature is currently available.
 - If neither route is available, request a private reporting channel through an available project contact surface. Keep the request minimal and do not disclose exploit details publicly.
 

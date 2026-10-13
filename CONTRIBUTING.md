@@ -2,7 +2,9 @@
 
 Start with the [README](README.md), especially the caller preconditions and result meanings. This project keeps a narrow boundary: one pure audit of evidence for one GET response resuming one contiguous identity-coded prefix.
 
-The planned repository is `Huzaifa-Asif/resume-range-audit`; its creation is not confirmed in this candidate. Once the repository exists, use its issue and pull-request templates. Until then, share ordinary feedback through the channel that supplied this source. Follow [SECURITY.md](SECURITY.md) for vulnerabilities.
+Use the issue and pull-request templates in
+[`Huzaifa-Asif/resume-range-audit`](https://github.com/Huzaifa-Asif/resume-range-audit)
+for ordinary changes. Follow [SECURITY.md](SECURITY.md) for vulnerabilities.
 
 ## Local checks
 

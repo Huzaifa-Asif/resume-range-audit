@@ -4,7 +4,7 @@ Explain whether a single HTTP resume response is eligible to append to a saved f
 
 `auditResumeResponse` correlates the saved offset and strong ETag, the actual GET request, response headers, and an optional observed body count. It returns one of five decisions with a machine-readable diagnostic. It performs no network or file I/O, retries, checksums, or storage changes. There are no runtime dependencies.
 
-**Status:** `1.0.0` is published on [npm](https://www.npmjs.com/package/resume-range-audit/v/1.0.0), with source available in the public [`Huzaifa-Asif/resume-range-audit`](https://github.com/Huzaifa-Asif/resume-range-audit) repository.
+**Status:** Published on [npm](https://www.npmjs.com/package/resume-range-audit), with source available in the public [`Huzaifa-Asif/resume-range-audit`](https://github.com/Huzaifa-Asif/resume-range-audit) repository. See the [changelog](CHANGELOG.md) for release history.
 
 ## Before you use it
 
@@ -20,7 +20,13 @@ This is a deliberately narrow policy for resuming **one contiguous prefix of an 
 
 Node.js 22 or later is the supported runtime. CommonJS, ESM, and TypeScript declarations are included in the built package.
 
-### Try the unpublished candidate locally
+Install the published package from npm:
+
+```sh
+npm install resume-range-audit
+```
+
+### Validate a source checkout locally
 
 From the supplied source directory:
 
@@ -33,15 +39,7 @@ npm pack
 Then, from a separate application directory, install the generated tarball using its actual path:
 
 ```sh
-npm install /absolute/path/to/resume-range-audit-1.0.0.tgz
-```
-
-### After registry publication has been verified
-
-Only after `1.0.0` has actually been published will this registry command be applicable:
-
-```sh
-npm install resume-range-audit@1.0.0
+npm install /absolute/path/to/resume-range-audit-1.0.2.tgz
 ```
 
 ## Quickstart
@@ -301,7 +299,7 @@ npm run check
 
 The aggregate check runs linting, TypeScript checks, builds, tests with coverage reporting, the local fixture example, and a package dry run. A CI workflow is provided for Node.js 22 and 24; its presence is not evidence that hosted CI has run.
 
-See [CONTRIBUTING.md](CONTRIBUTING.md), [SECURITY.md](SECURITY.md), and [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md). Until the planned repository is available, use the channel through which you received this source to report ordinary problems. Do not publish credentials or private response data in reports.
+See [CONTRIBUTING.md](CONTRIBUTING.md), [SECURITY.md](SECURITY.md), and [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md). Use the repository's issue templates for ordinary problems and the private routes described in the security policy for vulnerabilities. Do not publish credentials or private response data in reports.
 
 ## License
 
